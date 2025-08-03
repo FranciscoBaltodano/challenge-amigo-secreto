@@ -23,6 +23,8 @@ const sortearAmigo = () => {
   const indiceAleatorio = Math.floor(Math.random() * arrayAmigos.length);
   const amigoSorteado = arrayAmigos[indiceAleatorio];
   resultado.innerHTML = `El amigo secreto sorteado es: <strong>${amigoSorteado}</strong>`;
+  arrayAmigos = [];
+  listaAmigos.innerHTML = "";
 };
 
 const verificarAmigo = (nombreAmigo) => {
